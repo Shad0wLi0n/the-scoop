@@ -1,0 +1,31 @@
+users:
+  devon:
+    username: devon
+    articleIds:
+      - 1
+    commentIds:
+      - 1
+articles:
+  '1':
+    id: 1
+    title: I want a bed
+    url: >-
+      https://www.amazon.com/Zinus-SmartBase-Mattress-Foundation-Replacement/dp/B00M16A0AQ/ref=sr_1_5?s=furniture&ie=UTF8&qid=1513891934&sr=1-5&keywords=full+size+bed+frame&refinements=p_n_size_browse-bin%3A368697011
+    username: devon
+    commentIds:
+      - 1
+    upvotedBy: []
+    downvotedBy: []
+    comments:
+      - &ref_0
+        id: 1
+        body: You don't need a bed...
+        username: devon
+        articleId: 1
+        upvotedBy: []
+        downvotedBy:
+          - devon
+nextArticleId: 2
+comments:
+  '1': *ref_0
+nextCommentId: 2
