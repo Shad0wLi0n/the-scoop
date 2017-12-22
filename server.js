@@ -292,7 +292,7 @@ function createComment(url, request){
   const response = {};
 
   if (requestComment && requestComment.body && requestComment.articleId &&
-      requestComment.username && database.users[requestComment.username]) {
+      requestComment.username && database.users[requestComment.username] && database.articles[requestComment.articleId]) {
     const comment = {
       id: database.nextCommentId++,
       body: requestComment.body,
@@ -353,7 +353,7 @@ function deleteComment(url, request) {
     response.status = 204;
     writeDatabaseToYamlDatabase();
   } else {
-    response.status = 400;
+    response.status = 404;
   }
 
   return response;
